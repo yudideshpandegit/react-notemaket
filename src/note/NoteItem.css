@@ -1,0 +1,22 @@
+.noteitem__card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.noteitem__card > .MuiCheckbox-root{
+    width: 8px;
+    height: 8px;
+}
+
+.note-modal__cancel{
+    padding: 5px;
+    width: 15%;
+    background-color: orangered;
+    color: white;
+    font-weight: 700;
+    box-shadow: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }

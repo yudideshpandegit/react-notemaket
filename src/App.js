@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./UI/Card";
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import CreateNote from "./create-note/CreateNote";
+import { useState } from "react";
+import Note from "./note/Note";
 
 function App() {
+
+  const [showNote, setShowNote] = useState(false);
+
+  const onNote = () => {
+    setShowNote(true);
+    console.log(showNote);
+  }
+
+  const onClose = () => {
+    setShowNote(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="notemaket">
+        <Card className = 'notemaker__card' onClick = {onNote} >Add a new note
+          <AddCircleOutlineIcon />
+        </Card>
+      {showNote &&  <CreateNote show = {showNote} onClose = {onClose} />
+        } 
+
+        <Note />
+      </div>
     </div>
   );
 }

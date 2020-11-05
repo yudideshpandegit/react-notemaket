@@ -1,0 +1,61 @@
+.create-note{
+    width: 100%;
+}
+
+.create-note__content{
+    width: 100%;
+    height: 40%;
+}
+
+ .create-note__textarea{
+     width: 90%;
+     padding: 1rem;
+     margin: 10px auto;
+     border: 3px solid cadetblue;
+     border-radius: 10px;
+
+     outline: none;
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
+ } 
+
+ .create-note__title{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 10px 0;
+ }
+
+ .modal__submit{
+    padding: 8px;
+    width: 15%;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    box-shadow: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .create-note__success{
+      background-color: rgb(50,205,50);
+      color:rgb(0,100,0);
+      padding: 15px;
+      width: 50%;
+      margin: 10px auto;
+      height: auto;
+      border: 1px solid rgb(0,100,0);
+      border-radius: 10px;
+  }
+
+  .modal__cancel{
+    padding: 5px;
+    width: 15%;
+    background-color: orangered;
+    color: white;
+    font-weight: 700;
+    box-shadow: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
